@@ -1,0 +1,21 @@
+reset;
+model Single_Layer_1.mod;
+data Single_Layer.dat;
+option solver cplex;
+solve;
+
+display r;
+param Spare_Users_Total; 
+let Spare_Users_Total := w1 + w2;
+
+model Single_Layer_2.mod;
+objective Deployment2;
+option solver cplex;
+solve;
+display m;
+
+let e1 := sum{i in Access_Nodes, k in VNF_Nos1} r[i,k] * Acost[i] ;
+let e2 := sum{i in Access_Nodes, k in VNF_Nos2} m[i,k] * Acost[i] ;
+
+display e1;
+display e2;
