@@ -1,0 +1,30 @@
+reset;
+model Multi_Layer_1.mod;
+data Multi_Layer.dat;
+option solver cplex;
+solve;
+
+display x;
+display r;
+
+let e1 := sum{i in Core_Nodes, k in VNF_Nos1} x[i,k] * Ccost[i] ;
+let e2 := sum{i in Access_Nodes, k in VNF_Nos1} r[i,k] * Acost[i] ;
+
+
+
+model Multi_Layer_2.mod;
+option solver cplex;
+objective Deployment2;
+solve;
+
+display t;
+display d;
+
+let e3 := sum{i in Core_Nodes, k in VNF_Nos2} t[i,k] * Ccost[i] ;
+let e4 := sum{i in Access_Nodes, k in VNF_Nos2} d[i,k] * Acost[i] ;
+
+display e1;
+display e2;
+display e3;
+display e4;
+
