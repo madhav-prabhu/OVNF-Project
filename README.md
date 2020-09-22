@@ -1,2 +1,2 @@
 # OVNF-Project
-A Mixed Integer Programming Optimal Virtual Network Function Placement Algorithm
+A Mixed Integer Programming Optimal VNF Placement Algorithm
