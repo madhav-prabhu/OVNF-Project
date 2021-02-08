@@ -19,3 +19,5 @@ In the second scenario, VNFs are allowed to be deployed only on Access nodes. In
 
 + Different cost is assigned for VNF deployment on both core and access nodes.  
 Cost of deployment of VNFs is higher in core nodes than in access nodes as in a real-world scenario, Deployment of core nodes requires long term commitment and considerable budget whereas it is easier to instantiate an access node as compared to a core node based on user demands. Also, The model maximizes deployment of VNFs but only does so in the limits of capacity and requirement, therefore no extra VNFs are deployed which in turn optimizes deployment cost.
+
++ A detailed workflow is demonstarted in the [Presentation document](https://github.com/madhav-prabhu/OVNF-Project/blob/master/OVNF_Placement_Algorithm.pdf)
