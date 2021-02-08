@@ -2,8 +2,9 @@
 
 + The objective of this basic algorithm is to deploy VNFs on nodes based on user requirement and node capacity constraints. The diagram shows the network topology used to test the algorithm.
 
-
-
+<p align="center">
+  <img src="https://github.com/madhav-prabhu/OVNF-Project/blob/master/Multi_Layer/Architecture.PNG" width='700' title="Architecture">
+</p>
 
 
 + The algorithm is based on Topological Design model disucssed in the [Network Design & Algorithms](https://engineering.nyu.edu/sites/default/files/2019-11/ECE_GY_7363_S20.pdf) course. The OVNF model runs in the VNFM sub-system of the NFV MANO entity. The VNFM sub-system is responsible for deployment of VNFs, the algorithm uses capacity data obtained by VIM sub-system and user requirement data from the Orchestrator. 
