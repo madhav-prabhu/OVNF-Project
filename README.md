@@ -1,6 +1,6 @@
 # Optimal VNF placement algorithm
 
-+ The objective of this basic algorithm is to deploy VNFs on nodes based on user requirement and node capacity constraints. The diagram shows the network topology used to test the algorithm.
++ The objective of this basic algorithm is to deploy VNFs on nodes based on user requirement and node capacity constraints. The diagram shows the network topology implemented [AMPL](https://ampl.com/) that used to test the algorithm.
 
 <p align="center">
   <img src="https://github.com/madhav-prabhu/OVNF-Project/blob/master/Multi_Layer/Architecture.PNG" width='700' title="Architecture">
